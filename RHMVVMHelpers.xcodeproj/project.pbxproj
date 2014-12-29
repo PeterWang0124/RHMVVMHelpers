@@ -11,9 +11,10 @@
 		F2AD78FE1A511CC300116EF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD78FD1A511CC300116EF7 /* ViewController.swift */; };
 		F2AD79031A511CC300116EF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2AD79021A511CC300116EF7 /* Images.xcassets */; };
 		F2AD79121A511CC300116EF7 /* RHMVVMHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD79111A511CC300116EF7 /* RHMVVMHelpersTests.swift */; };
-		F2AD79221A511D3700116EF7 /* MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD79211A511D3700116EF7 /* MVVM.swift */; };
 		F2D86F5D1A511EF500658A69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AD78FF1A511CC300116EF7 /* Main.storyboard */; };
 		F2D86F5E1A511F0100658A69 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2AD79041A511CC300116EF7 /* LaunchScreen.xib */; };
+		F2D86FAD1A51283400658A69 /* MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D86FAC1A51283400658A69 /* MVVM.swift */; };
+		F2D86FAE1A51283400658A69 /* MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D86FAC1A51283400658A69 /* MVVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 		F2AD790B1A511CC300116EF7 /* RHMVVMHelpersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHMVVMHelpersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AD79101A511CC300116EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2AD79111A511CC300116EF7 /* RHMVVMHelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHMVVMHelpersTests.swift; sourceTree = "<group>"; };
-		F2AD79211A511D3700116EF7 /* MVVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVM.swift; sourceTree = "<group>"; };
+		F2D86FAC1A51283400658A69 /* MVVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +80,7 @@
 		F2AD78F81A511CC300116EF7 /* RHMVVMHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				F2AD791B1A511D1200116EF7 /* Source */,
+				F2D86FAB1A51283400658A69 /* Source */,
 				F2AD78FB1A511CC300116EF7 /* AppDelegate.swift */,
 				F2AD78FD1A511CC300116EF7 /* ViewController.swift */,
 				F2AD78FF1A511CC300116EF7 /* Main.storyboard */,
@@ -115,13 +116,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F2AD791B1A511D1200116EF7 /* Source */ = {
+		F2D86FAB1A51283400658A69 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				F2AD79211A511D3700116EF7 /* MVVM.swift */,
+				F2D86FAC1A51283400658A69 /* MVVM.swift */,
 			);
 			path = Source;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -224,7 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2AD78FE1A511CC300116EF7 /* ViewController.swift in Sources */,
-				F2AD79221A511D3700116EF7 /* MVVM.swift in Sources */,
+				F2D86FAD1A51283400658A69 /* MVVM.swift in Sources */,
 				F2AD78FC1A511CC300116EF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2AD79121A511CC300116EF7 /* RHMVVMHelpersTests.swift in Sources */,
+				F2D86FAE1A51283400658A69 /* MVVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
