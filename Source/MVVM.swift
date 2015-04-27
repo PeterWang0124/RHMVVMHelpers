@@ -33,15 +33,15 @@ class Dynamic<T> {
   }
   
   // MARK: - Binding
-  func bind(observer: Observer, functionName: String = __FUNCTION__, fileName: String = __FILE__, lineNumber: Int = __LINE__) {
+  func bind(functionName: String = __FUNCTION__, fileName: String = __FILE__, lineNumber: Int = __LINE__, observer: Observer) {
     let hashValue = "\(functionName)\(fileName)\(lineNumber)".hashValue
     if self.observers[hashValue] == nil {
       self.observers[hashValue] = observer
     }
   }
   
-  func bindAndFire(observer: Observer, functionName: String = __FUNCTION__, fileName: String = __FILE__, lineNumber: Int = __LINE__) {
-    self.bind(observer, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
+  func bindAndFire(functionName: String = __FUNCTION__, fileName: String = __FILE__, lineNumber: Int = __LINE__, observer: Observer) {
+    self.bind(functionName: functionName, fileName: fileName, lineNumber: lineNumber, observer: observer)
     observer(value)
   }
   
